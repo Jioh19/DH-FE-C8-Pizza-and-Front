@@ -82,6 +82,7 @@ h2 {
 .card-1 {
 	background-image: url("../img/delivery@2x.png");
 	background-size: cover;
+	background-position: center;;
 }
 /* Fin de card-1 */
 
@@ -97,9 +98,8 @@ h2 {
 article {
 	justify-content: space-around;
 	align-items: center;
-	margin: 2rem;
+	margin: 1rem;
 	display: flex;
-	height: 200px;
 }
 
 .top5 ol li {
@@ -138,8 +138,8 @@ footer nav {
 	}
 
 	.card {
-		width: 464px;
-		height: 331px;
+		width: min(464px, 90%);
+		height: min(331px, 40%);
 		border-radius: 5px;
 		overflow: hidden;
 		margin: 2px;
