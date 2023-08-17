@@ -12,7 +12,7 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 1rem;
+	padding: 1.5rem;
 	position: fixed;
 	width: 100%;
 }
@@ -59,8 +59,9 @@ header nav {
 
 /* Inicio del main */
 main {
-    padding: 4rem;
+	padding-block: 8rem 10rem;
 	display: flex;
+	justify-content: center;
 	align-items: center;
 	height: 100vh;
 	background-color: var(--main-color-background);
@@ -76,7 +77,6 @@ main {
 
 h2 {
 	margin: 1rem;
-    
 }
 /* Inicio card-1 */
 .card-1 {
@@ -87,25 +87,24 @@ h2 {
 
 /* Inicio card-2 */
 .card-2 {
-
 	background-color: white;
 }
 
-.card-2 h2{
-    text-align: center;
+.card-2 h2 {
+	text-align: center;
 }
 
 article {
-    justify-content: space-around;
-    align-items: center;
-    margin: 2rem;
-    display: flex;
-    height: 200px;
+	justify-content: space-around;
+	align-items: center;
+	margin: 2rem;
+	display: flex;
+	height: 200px;
 }
 
 .title-img {
-    height: 129px;
-    width: 92px;
+	height: 129px;
+	width: 92px;
 }
 /* Fin de card-2 */
 
@@ -114,11 +113,48 @@ article {
 /* Inicio del footer */
 
 footer nav {
-    height: 150px;
-    bottom: 0;
+	height: 150px;
+	bottom: 0;
 }
 
-.footer-nav ul li{
-    margin-block: 0.5em;
+.hamburger {
+	display: none;
+}
+
+.footer-nav ul li {
+	margin-block: 0.5em;
 }
 /* Fin del footer */
+
+@media only screen and (max-width: 980px) {
+	main {
+		flex-direction: column-reverse;
+		padding-block: 5rem 4rem;
+	}
+
+	.card {
+		width: 464px;
+		height: 331px;
+		border-radius: 5px;
+		overflow: hidden;
+		margin: 2px;
+	}
+
+	.header-nav {
+		display: none;
+	}
+
+	.hamburger {
+		display: block;
+	}
+
+	footer nav {
+		flex-direction: row-reverse;
+		height: 84px;
+	}
+
+	.footer-nav ul li {
+		margin-block: 0;
+		font-size: smaller;
+	}
+}
