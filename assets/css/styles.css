@@ -96,10 +96,12 @@ h2 {
 }
 
 article {
+	display: flex;
+	height: 70%;
 	justify-content: space-around;
 	align-items: center;
 	margin: 1rem;
-	display: flex;
+	
 }
 
 .top5 ol li {
